@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="title">Dashboard</h1>
+            <ul class="menu"><!--Navigation menu-->
+                <li><a href="index.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="cv.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header2">
+            <h1 class="title2">Contact Us</h1>
+            <p class="title3">Please get in touch</p>
+            <img src="Assets/contact.png" class="logo2">
+
+            <div class="body2">
+                <div class="try1">
+                    <img src="Assets/phone2.png" class="logo1">
+                    <button onclick="copy1()">9101970063</button>
+                </div>
+                <div class="try3">
+                    <img src="Assets/location.png" class="logo3">
+                    <button>Dibrugarh,Assam 786001</button>
+                </div>
+                <div class="try2">
+                    <img src="Assets/email.png" class="logo1">
+                    <button onclick="copy2()">sritrinayangogoi@gmail.com</button>
+                </div>
+            </div>
+
+        </div>
+    
+    <script>
+        function copy1(){
+            navigator.clipboard.writeText("9101970063");
+        }
+        function copy2(){
+            navigator.clipboard.writeText("sritrinayangogoi@gmail.com");
+        }
+    </script>
+    </header>
+</body>
+</html>
